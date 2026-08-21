@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Kabokgwari Projects icon — hammer mark</title>
+
+<circle cx="100" cy="100" r="78" fill="none" stroke="#1B211D" stroke-width="4"/>
+
+<line x1="58" y1="142" x2="134" y2="66" stroke="#A9843C" stroke-width="16" stroke-linecap="round"/>
+
+<rect x="45" y="115" width="54" height="26" rx="13" fill="#1B211D" transform="rotate(-45 72 128)"/>
+<line x1="58" y1="120" x2="58" y2="136" stroke="#EDE7DA" stroke-width="1.5" opacity="0.4" transform="rotate(-45 72 128)"/>
+<line x1="68" y1="118" x2="68" y2="138" stroke="#EDE7DA" stroke-width="1.5" opacity="0.4" transform="rotate(-45 72 128)"/>
+<line x1="78" y1="118" x2="78" y2="138" stroke="#EDE7DA" stroke-width="1.5" opacity="0.4" transform="rotate(-45 72 128)"/>
+
+<rect x="99" y="55" width="54" height="26" rx="6" fill="#1B211D" transform="rotate(45 126 68)"/>
+<rect x="99" y="55" width="54" height="8" fill="#B5622A" transform="rotate(45 126 68)"/>
+
+</svg>
