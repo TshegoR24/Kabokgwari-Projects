@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kabokgwari Projects — Interior Design &amp; Renovation</title>
+<link rel="icon" type="image/jpeg" href="logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -79,9 +80,10 @@
   }
   .nav-mark{
     font-family:'Fraunces',serif; font-weight:500; font-size:19px; letter-spacing:-0.01em;
-    display:flex; align-items:center; gap:10px;
+    display:flex; align-items:center; gap:12px;
   }
   .nav-mark .dot{width:8px; height:8px; border-radius:50%; background:var(--clay); display:inline-block;}
+  .logo-img{width:38px; height:38px; object-fit:contain; display:block; flex-shrink:0;}
   .nav-links{display:flex; gap:34px; font-size:14px;}
   .nav-links a{
     position:relative; padding-bottom:3px; color:var(--ink-soft);
@@ -233,8 +235,22 @@
   .g-item{
     aspect-ratio:4/5; position:relative; overflow:hidden; border-radius:2px;
     display:flex; align-items:flex-end; padding:20px;
-    background-size:cover;
+    background-size:cover; background-position:center;
   }
+  .g-item img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    transition:transform 0.6s ease;
+  }
+  .g-item:hover img{transform:scale(1.05);}
+  .g-item.has-photo::before{
+    content:''; position:absolute; inset:0; z-index:0;
+    background:linear-gradient(to top, rgba(27,33,29,0.75) 0%, rgba(27,33,29,0.05) 45%);
+  }
+  .g-item.placeholder{
+    border:1px dashed var(--muted); align-items:center; justify-content:center; text-align:center;
+  }
+  .g-item.placeholder .g-label{color:var(--muted); font-size:13px;}
+  .g-item.placeholder .g-note{color:var(--muted); opacity:0.7;}
   .g-item::before{
     content:''; position:absolute; inset:0; opacity:0.9;
   }
@@ -245,10 +261,6 @@
   .g-item .g-note{
     position:relative; z-index:1; color:rgba(237,231,218,0.7); font-size:11px; margin-top:4px;
   }
-  .g1::before{background:repeating-linear-gradient(115deg, var(--olive), var(--olive) 2px, #5c6346 2px, #5c6346 4px);}
-  .g2::before{background:repeating-linear-gradient(70deg, var(--clay), var(--clay) 18px, var(--clay-dim) 18px, var(--clay-dim) 36px);}
-  .g3::before{background:radial-gradient(circle at 30% 30%, #7a7460, var(--ink-soft) 75%);}
-  .g4::before{background:repeating-linear-gradient(0deg, var(--brass), var(--brass) 3px, #8a6c30 3px, #8a6c30 7px);}
   .g5::before{background:linear-gradient(160deg, var(--ink-soft), var(--olive));}
   .g6::before{background:repeating-conic-gradient(var(--clay-dim) 0% 25%, var(--olive) 0% 50%); background-size:26px 26px;}
 
@@ -288,12 +300,16 @@
   .contact-form button:hover{background:#0f1310;}
 
   /* ---------- FOOTER ---------- */
-  footer{padding:50px 0 40px;}
+  footer{padding:60px 0 40px;}
+  .foot-tagline{
+    text-align:center; font-family:'Fraunces',serif; font-style:italic; font-size:20px;
+    color:var(--ink-soft); padding-bottom:40px; margin-bottom:0;
+  }
   .foot-row{
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;
     padding-top:30px; border-top:1px solid var(--line);
   }
-  .foot-mark{font-family:'Fraunces',serif; font-size:17px;}
+  .foot-mark{font-family:'Fraunces',serif; font-size:17px; display:flex; align-items:center; gap:10px;}
   .foot-links{display:flex; gap:24px; font-size:13px; color:var(--ink-soft);}
   .foot-fine{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted);}
 </style>
@@ -301,7 +317,7 @@
 <body>
 
 <nav class="nav" id="nav">
-  <a href="#top" class="nav-mark"><span class="dot"></span>Kabokgwari Projects</a>
+  <a href="#top" class="nav-mark"><img src="logo.jpg" alt="Ka Bokgwari Projects logo" class="logo-img">Kabokgwari Projects</a>
   <div class="nav-links">
     <a href="#about">Studio</a>
     <a href="#services">Services</a>
@@ -486,15 +502,31 @@
         </span>Texture — Recent Work</div>
         <h2>A few finished rooms.</h2>
       </div>
-      <p class="support">[Swap each tile below for a real project photograph — this is placeholder texture standing in until images are supplied.]</p>
+      <p class="support">A look at recent kitchen and living-room fit-outs across Limpopo. Send more project photos any time and we'll keep this gallery growing.</p>
     </div>
     <div class="gallery reveal">
-      <div class="g-item g1"><div><div class="g-label">Living Room — Sandton</div><div class="g-note">Add photo</div></div></div>
-      <div class="g-item g2"><div><div class="g-label">Kitchen Renovation</div><div class="g-note">Add photo</div></div></div>
-      <div class="g-item g3"><div><div class="g-label">Office Fit-Out</div><div class="g-note">Add photo</div></div></div>
-      <div class="g-item g4"><div><div class="g-label">Bedroom Suite</div><div class="g-note">Add photo</div></div></div>
-      <div class="g-item g5"><div><div class="g-label">Retail Space</div><div class="g-note">Add photo</div></div></div>
-      <div class="g-item g6"><div><div class="g-label">Full Home Renovation</div><div class="g-note">Add photo</div></div></div>
+      <div class="g-item has-photo">
+        <img src="work-kitchen-01.jpg" alt="Fitted gloss-white kitchen renovation with breakfast counter">
+        <div><div class="g-label">Kitchen Renovation</div><div class="g-note">Fitted gloss cabinetry &amp; breakfast counter</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-tvwall-01.jpg" alt="TV feature wall with marble panel and ring pendant light">
+        <div><div class="g-label">Living Room Feature Wall</div><div class="g-note">Marble panel &amp; backlit shelving</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-kitchen-02.jpg" alt="Built-in kitchen cabinetry around fridge and microwave nook">
+        <div><div class="g-label">Kitchen Build-In</div><div class="g-note">Cabinetry fitted around appliances</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-tvwall-02.jpg" alt="Slatted TV feature wall with accent lighting">
+        <div><div class="g-label">Living Room Feature Wall</div><div class="g-note">Slat panelling &amp; accent lighting</div></div>
+      </div>
+      <div class="g-item placeholder">
+        <div><div class="g-label">+ Add a project</div><div class="g-note">Bedroom, office or full renovation</div></div>
+      </div>
+      <div class="g-item placeholder">
+        <div><div class="g-label">+ Add a project</div><div class="g-note">Send more photos to fill this out</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -565,8 +597,9 @@
 
 <footer>
   <div class="wrap">
+    <p class="foot-tagline">"Quality maintenance is a sustainable approach."</p>
     <div class="foot-row">
-      <div class="foot-mark">Kabokgwari Projects</div>
+      <div class="foot-mark"><img src="logo.jpg" alt="Ka Bokgwari Projects logo" class="logo-img" style="width:30px; height:30px;">Kabokgwari Projects</div>
       <div class="foot-links">
         <a href="#about">Studio</a>
         <a href="#services">Services</a>
