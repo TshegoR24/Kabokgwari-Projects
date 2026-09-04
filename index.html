@@ -231,7 +231,13 @@
   /* ---------- PORTFOLIO / TEXTURE ---------- */
   .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
   @media (max-width:860px){ .gallery{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:560px){ .gallery{grid-template-columns:1fr;} .video-grid{grid-template-columns:1fr !important;} }
+  .video-frame{
+    height:420px; background:#000; border-radius:2px; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .video-frame video{max-width:100%; max-height:100%; width:auto; height:auto; display:block;}
+  @media (max-width:760px){ .video-frame{height:340px;} }
+  @media (max-width:560px){ .gallery{grid-template-columns:1fr;} .video-grid{grid-template-columns:1fr !important;} .video-frame{height:300px;} }
   .g-item{
     aspect-ratio:4/5; position:relative; overflow:hidden; border-radius:2px;
     display:flex; align-items:flex-end; padding:20px;
@@ -602,12 +608,16 @@
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="10" width="26" height="28" rx="2"/><path d="M32 20 L42 14 V34 L32 28 Z"/></svg>
       </span>Site Walkthrough</div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" class="video-grid">
-        <video controls preload="metadata" style="width:100%; border-radius:2px; background:#000; display:block;">
-          <source src="work-tvwall-video-01.mp4" type="video/mp4">
-        </video>
-        <video controls preload="metadata" style="width:100%; border-radius:2px; background:#000; display:block;">
-          <source src="work-tvwall-video-02.mp4" type="video/mp4">
-        </video>
+        <div class="video-frame">
+          <video controls preload="metadata">
+            <source src="work-tvwall-video-01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-frame">
+          <video controls preload="metadata">
+            <source src="work-tvwall-video-02.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
       <p style="margin-top:14px; font-size:13px; color:var(--muted); font-family:'IBM Plex Mono',monospace;">Living room feature wall, finished with backlighting.</p>
     </div>
