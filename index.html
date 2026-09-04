@@ -199,7 +199,7 @@
 
   /* ---------- SERVICES / FORM ---------- */
   .services-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line);}
-  @media (max-width:760px){ .services-grid{grid-template-columns:1fr;} }
+  @media (max-width:760px){ .services-grid{grid-template-columns:1fr;} .service-card{grid-column:auto !important;} }
   .service-card{
     background:var(--stone); padding:44px 40px; position:relative;
     transition:background 0.35s ease;
@@ -348,7 +348,7 @@
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="10" width="24" height="24"/><rect x="18" y="22" width="24" height="16"/></svg>
       </span>Space</div>
       <h1>We shape the <em>space</em><br>before we decorate it.</h1>
-      <p class="lede">Kabokgwari Projects is an interior design and renovation studio. We plan rooms around how people move through them, then build, furnish and finish everything that follows.</p>
+      <p class="lede">Kabokgwari Projects is a design and build studio. We plan the space, then handle everything that follows — renovation, décor, electrical, painting, welding and carpentry — under one roof.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Start a project
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
@@ -417,9 +417,9 @@
         <div class="eyebrow"><span class="num">03</span><span class="icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 6 L42 16 L42 34 L24 44 L6 34 L6 16 Z"/><path d="M6 16 L24 26 L42 16 M24 26 L24 44"/></svg>
         </span>Form — What We Do</div>
-        <h2>Four services, one build.</h2>
+        <h2>Seven services, one build.</h2>
       </div>
-      <p class="support">Take one, or all four in sequence. Most full renovations move through every stage below.</p>
+      <p class="support">Take one, or bring in the full crew. Most full renovations move through several of these in sequence.</p>
     </div>
 
     <div class="services-grid reveal">
@@ -432,20 +432,38 @@
       <div class="service-card">
         <span class="tag">— 02</span>
         <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 40 L8 20 L24 8 L40 20 L40 40 Z"/><path d="M18 40 L18 26 L30 26 L30 40"/></svg></div>
-        <h3>Renovations &amp; Fit-Outs</h3>
+        <h3>Renovation Fit &amp; Out</h3>
         <p>Structural changes, finishes and fixtures managed on site, on a schedule you can see the whole way through.</p>
       </div>
       <div class="service-card">
         <span class="tag">— 03</span>
         <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 40 C14 22 16 12 24 6 C32 12 34 22 34 40 Z"/><line x1="24" y1="6" x2="24" y2="40"/></svg></div>
-        <h3>Décor, Styling &amp; Furnishing</h3>
+        <h3>Décor &amp; Styling</h3>
         <p>Furniture, textiles, art and lighting sourced and placed — the layer that turns a finished space into a home.</p>
       </div>
       <div class="service-card">
         <span class="tag">— 04</span>
-        <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="16"/><path d="M24 16 L24 24 L30 28"/></svg></div>
-        <h3>Maintenance &amp; Handover Care</h3>
-        <p>A seasonal check-in after we leave — vents, fixtures and finishes kept in the condition they were handed over in.</p>
+        <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M26 4 L12 26 H22 L18 44 L38 18 H26 Z"/></svg></div>
+        <h3>Electrical Engineering</h3>
+        <p>Wiring, lighting circuits and fittings installed as part of the build, not bolted on once everything else is done.</p>
+      </div>
+      <div class="service-card">
+        <span class="tag">— 05</span>
+        <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="8" width="27" height="10" rx="5"/><line x1="21" y1="18" x2="21" y2="40"/><circle cx="13" cy="23" r="1.4" fill="currentColor" stroke="none"/><circle cx="29" cy="27" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Painting</h3>
+        <p>Interior, exterior and roof painting — surface prep, primer and a finish built to hold up outdoors.</p>
+      </div>
+      <div class="service-card">
+        <span class="tag">— 06</span>
+        <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="10" y1="38" x2="26" y2="22"/><path d="M26 22 L31 13 M29 19 L37 12 M27 27 L34 22"/></svg></div>
+        <h3>Welding</h3>
+        <p>Gates, burglar bars, staircases and structural steelwork — fabricated and fitted on site.</p>
+      </div>
+      <div class="service-card" style="grid-column: span 2;">
+        <span class="tag">— 07</span>
+        <div class="si"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="30" width="36" height="8"/><path d="M6 26 L10 30 L14 26 L18 30 L22 26 L26 30 L30 26 L34 30 L38 26 L42 30"/></svg></div>
+        <h3>Carpentry</h3>
+        <p>Built-in cupboards, doors, skirting and custom joinery — made and fitted by the same team that designed them.</p>
       </div>
     </div>
   </div>
@@ -502,7 +520,7 @@
         </span>Texture — Recent Work</div>
         <h2>A few finished rooms.</h2>
       </div>
-      <p class="support">A look at recent kitchen, living-room and bedroom fit-outs across Limpopo.</p>
+      <p class="support">A look at recent kitchen, living-room, bedroom and salon fit-outs across Limpopo.</p>
     </div>
     <div class="gallery reveal">
       <div class="g-item has-photo">
@@ -528,6 +546,18 @@
       <div class="g-item has-photo">
         <img src="work-wardrobe-01.jpg" alt="Full wall built-in wardrobe with drawers">
         <div><div class="g-label">Bedroom Built-In</div><div class="g-note">Full-wall wardrobe &amp; drawer units</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-wardrobe-02.jpg" alt="Corner built-in wardrobe with gloss white finish">
+        <div><div class="g-label">Bedroom Built-In</div><div class="g-note">Corner wardrobe, gloss finish</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-salon-01.jpg" alt="Salon styling station with marble panel and backlit mirrors">
+        <div><div class="g-label">Salon Fit-Out</div><div class="g-note">Marble panel &amp; backlit mirror station</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-salon-02.jpg" alt="Finished salon styling station with stone cladding and styled decor">
+        <div><div class="g-label">Salon Fit-Out</div><div class="g-note">Stone-clad station, fully styled</div></div>
       </div>
     </div>
   </div>
