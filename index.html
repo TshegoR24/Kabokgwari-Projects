@@ -231,7 +231,7 @@
   /* ---------- PORTFOLIO / TEXTURE ---------- */
   .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
   @media (max-width:860px){ .gallery{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:560px){ .gallery{grid-template-columns:1fr;} }
+  @media (max-width:560px){ .gallery{grid-template-columns:1fr;} .video-grid{grid-template-columns:1fr !important;} }
   .g-item{
     aspect-ratio:4/5; position:relative; overflow:hidden; border-radius:2px;
     display:flex; align-items:flex-end; padding:20px;
@@ -518,9 +518,9 @@
         <div class="eyebrow"><span class="num">05</span><span class="icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14 Q14 6 24 14 T44 14"/><path d="M4 24 Q14 16 24 24 T44 24"/><path d="M4 34 Q14 26 24 34 T44 34"/></svg>
         </span>Texture — Recent Work</div>
-        <h2>A few finished rooms.</h2>
+        <h2>The work, from site visit to finish.</h2>
       </div>
-      <p class="support">A look at recent kitchen, living-room, bedroom and salon fit-outs across Limpopo.</p>
+      <p class="support">Kitchens, bedrooms, living rooms and a salon fit-out — including a few mid-installation, so you can see the process as well as the result.</p>
     </div>
     <div class="gallery reveal">
       <div class="g-item has-photo">
@@ -559,6 +559,57 @@
         <img src="work-salon-02.jpg" alt="Finished salon styling station with stone cladding and styled decor">
         <div><div class="g-label">Salon Fit-Out</div><div class="g-note">Stone-clad station, fully styled</div></div>
       </div>
+      <div class="g-item has-photo">
+        <img src="work-wardrobe-03.jpg" alt="Corner wardrobe installation, wide view">
+        <div><div class="g-label">Bedroom Built-In</div><div class="g-note">Corner wardrobe, full room view</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-wardrobe-04.jpg" alt="Built-in wardrobe with open drawers showing internal joinery">
+        <div><div class="g-label">Bedroom Built-In</div><div class="g-note">Drawer detail &amp; internal joinery</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-wardrobe-05.jpg" alt="Wardrobe installation in progress with tools on site">
+        <div><div class="g-label">Bedroom Built-In</div><div class="g-note">Installation in progress</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-ceiling-panel-01.jpg" alt="Wood-look PVC ceiling panelling installation">
+        <div><div class="g-label">Ceiling Panelling</div><div class="g-note">Wood-look PVC ceiling install</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-salon-03.jpg" alt="Salon station before stone cladding, exposed stone wall">
+        <div><div class="g-label">Salon Fit-Out</div><div class="g-note">Before cladding &amp; styling</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-salon-04.jpg" alt="Salon feature wall during installation, LED strips fitted to raw brick">
+        <div><div class="g-label">Salon Fit-Out</div><div class="g-note">Backlighting fitted, before finishing</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-tvwall-04.jpg" alt="TV feature wall installation, wood slat panelling in progress">
+        <div><div class="g-label">Living Room Feature Wall</div><div class="g-note">Slat panelling, installation in progress</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-tvwall-05.jpg" alt="TV feature wall installation, marble panel being fitted">
+        <div><div class="g-label">Living Room Feature Wall</div><div class="g-note">Marble panel, installation in progress</div></div>
+      </div>
+      <div class="g-item has-photo">
+        <img src="work-tvwall-06.jpg" alt="TV feature wall installation, marble panel fitted, second angle">
+        <div><div class="g-label">Living Room Feature Wall</div><div class="g-note">Marble panel, installation in progress</div></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:60px;">
+      <div class="eyebrow" style="margin-bottom:22px;"><span class="num">05a</span><span class="icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="10" width="26" height="28" rx="2"/><path d="M32 20 L42 14 V34 L32 28 Z"/></svg>
+      </span>Site Walkthrough</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" class="video-grid">
+        <video controls preload="metadata" style="width:100%; border-radius:2px; background:#000; display:block;">
+          <source src="work-tvwall-video-01.mp4" type="video/mp4">
+        </video>
+        <video controls preload="metadata" style="width:100%; border-radius:2px; background:#000; display:block;">
+          <source src="work-tvwall-video-02.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p style="margin-top:14px; font-size:13px; color:var(--muted); font-family:'IBM Plex Mono',monospace;">Living room feature wall, finished with backlighting.</p>
     </div>
   </div>
 </section>
